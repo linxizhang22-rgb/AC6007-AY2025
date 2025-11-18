@@ -11,6 +11,7 @@ def index():
 
 @app.route("/main",methods=["GET","POST"])
 def main():
+    r = request.form.get("q")
     return(render_template("main.html"))
 
 
